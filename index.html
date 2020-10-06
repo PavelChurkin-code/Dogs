@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dogs</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body >
+	<div class="container">
+		<div>
+			<div class="intro__title">Какой-то там заголовок</div>
+			<input type="button" class="btn" value="Жать сюда" onclick="showForm(document.getElementById('registration'))">
+		</div>
+
+		<div>
+			<form class="form" id="registration" style="display: none;">
+				<img class="close" src="images/Vector.png" onclick="closeForm(document.getElementById('registration'))">
+				<label class="reg">Регистрация</label><br>
+
+				<label class="name">Введите имя</label><br>
+				<input class="enter__name" type="text" name="name" placeholder="Акакий"/><br>
+
+				<label class="email">Введите e-mail</label><br>
+				<input class="enter__email" type="text" name="email" placeholder="test@test.ru"/><br>
+
+				<label class="phonenumber">Введите телефон</label><br>
+				<input class="enter__phonenumber"type="text" name="phone" placeholder="+7 900 009 09 09"/><br>
+
+				<input type="button" class="send" value="Зарегистрироваться" />
+				<input type="button" class="enter" value="Войти"/>
+				
+			</form>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
